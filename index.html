@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ <script src="https://kit.fontawesome.com/5020fb7aee.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body>
+<div class="container">
+  <div class="search">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn"><span class="material-symbols-outlined">
+search
+</span></button>
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+</style>
+        </div>
+        <div id="weather">
+            <h2 id="cityName"></h2>
+            <div id="currentWeather">
+                  <p id="temperature"></p>
+                  <p id="minMax"></p>
+                <img id="weatherIcon" src="" alt="Weather Icon">
+                <p id="description"></p>
+                <p id="clouds"></p>
+                <p id="humidity"></p>
+                <p id="aqi"></p>
+            </div>
+<div id="hourlyForecast" class="hourly-forecast">
+</div>
+            <div id="forecast"></div>
+        </div>
+    </div>
+    
+    <div class="wrap">
+<div class="aqi-container">
+  <p class="hea">AQI (1-5)</p>
+  <div class="aqwrap">
+     <div id="aqi-bar" class="aqi-bar">
+     </div>
+     </div>
+     <div class="aqiwrap">
+       <p id="aq"></p>
+       <div class="exinf">
+        <p id="o3-value"></p>
+        <p id="no2-value"></p>
+        <p id="nh3-value"></p>
+        <p id="pm25-value"></p>
+        </div>
+        </div>
+     <div id="aqi-category-and-health-implications"></div>
+      
+    </div>
+    </div>
+    
+    <div class="sun-info">
+  <div class="sun-card card">
+   <p class="hea">Sun Information</p>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#ccc" stroke-width="5" />
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#ffcc00" stroke-width="5" id="sun-arc" />
+      </svg>
+
+      <p id="daylight-left"></p>
+ 
+  </div>
+        <div class="sun">
+          <p>Sunrise: <span id="sunriseTime"></span></p>
+    <p>Sunset: <span id="sunsetTime"></span></p>
+    </div>
+    </div>
+    
+    <div class="windCard">
+
+        <p class="hea">Wind Information</p>
+
+    <div class="card-body">
+        <img id="windArrow" src="compass.png">
+        <p class="wind-speed">Wind Speed: <span id="windSpeed"></span> m/s</p>
+        <p class="owind">Wind Direction: <span id="windDirection"></span></p>
+        <p class="owind">Gust Speed: <span id="gustSpeed"></span> m/s</p>
+   
+    </div>
+</div>
+
+<div class="wrap2">
+  <p class="hea">Miscellaneous</p>
+<div class="misce">
+  <p id="pressure"></p>
+  <p id="visibility"></p>
+    <p id="rain1h"></p>
+</div>
+    </div>
+    
+    <footer>
+      <div class="icons">
+      <a href="https://github.com/Ronak-08"><i class="fa-brands fa-github"></i></a>
+      <a href="https://m.youtube.com/channel/UCmhOhExrvc9MALNZ-WR9CzQ"><i class="fa-brands fa-youtube"></i></a>
+      <a href="mailto:ronakameta65@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p> © 2024 Ronak Ameta. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
