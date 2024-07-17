@@ -18,17 +18,17 @@ Welcome to **My Weather Website**! This site provides real-time weather updates 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/my-weather-website.git
-    cd my-weather-website
+    git clone https://github.com/Ronak-08/Weather-App.git
+    cd Weather-App
     ```
 
 2. **Open the project in your code editor**.
 
 3. **Add your OpenWeather API key**:
    - Open the `script.js` file.
-   - Replace `'your_api_key_here'` with your actual API key:
+   - Replace `'your_api_key'` with your actual API key:
      ```javascript
-     const apiKey = 'your_api_key_here';
+     const apiKey = 'your_api_key';
      ```
 
 4. **Open `index.html` in your browser** to see the website in action.
